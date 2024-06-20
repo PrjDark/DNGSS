@@ -1,0 +1,4 @@
+﻿//最初は必ずScene.Clear();するべき　（例外あり
+Scene.Clear();
+
+Scene.Goto("S1_Have_A_Chat", 0);

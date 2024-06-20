@@ -1,0 +1,18 @@
+﻿Extra.SetRenderTarget("R");
+BG.Set("校内");
+Extra.SetRenderTarget("L");
+BG.Set("扉");
+監視カメラをかいくぐり、ついに最上フロアへと辿り着いた。
+//半分半分:
+「後は扉を開けるだけだ」
+「ああ」
+「行くぞ」
+
+//選択肢:「開ける」
+UserInputs.If("", "開ける");
+
+//両背景:暗転
+
+//過去の条件分岐の正否で分岐
+Flag.GotoIf("S11_DG1_The_Fire_Works", 0, Flag["ResultOfDG0"], Flag["ResultOfDG1"]);
+Scene.Goto("S11_DG0_Close_Loss", 0);

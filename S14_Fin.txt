@@ -1,0 +1,4 @@
+﻿Scene.Clear();
+UserInputs.HideSystem();
+BG.Set("完");
+　
